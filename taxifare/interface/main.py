@@ -157,7 +157,7 @@ def train(
     save_model(model=model)
 
     # The latest model should be moved to staging
-    pass  # YOUR CODE HERE
+    mlflow_transition_model(current_stage="None", new_stage="Staging")
 
     print("✅ train() done \n")
 
